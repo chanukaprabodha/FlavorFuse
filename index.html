@@ -3,87 +3,199 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>FlavorFuse</title>
     <link rel="stylesheet" href="/css/Home.css" />
+    <link rel="stylesheet" href="/css/body-header-footer.css" />
   </head>
 
   <body>
     <header>
-      <div class="logo">
-        <img
-          src="/Assets/Images/Black and White Modern SEO Services Website Logo 2.png"
-          alt="logo of FlavorFuse"
-        />
+      <span id="logo">FlavorFuse</span>
+      <div class="search">
+        <input type="search" placeholder=" Search recipes" />
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </header>
-    <section>
       <nav>
-        <img
-          src="/Assets/Images/Cheeseburger-home.jpg"
-          alt="Cheeseburger"
-        />
-        <a href="/Pages/Cheeseburger.html">
-          <h2>Cheeseburger</h2>
-        </a>
-        <img
-          src="/Assets/Images/Sourdough-Biscuits_home.jpg"
-          alt="Sourdough Biscuits"
-        />
-        <a href="/Pages/sourdoughBiscuits.html">
-          <h2>Sourdough Biscuits</h2>
-        </a>
-        <img
-          src="/Assets/Images/Toffee_home.jpg"
-          alt="Toffee"
-        />
-        <a href="/Pages/easyHomemadeToffee.html">
-          <h2>Easy Homemade Toffee</h2>
-        </a>
-        <img
-          src="/Assets/Images/Honey-Fried-Chicken-and-Waffles_home.jpg"
-          alt="Honey Fried Chicken And Waffles"
-        />
-        <a href="/Pages/honeyFriedChickenAndWaffles.html">
-          <h2>Honey Fried Chicken And Waffles</h2>
-        </a>
-        <img
-          src="/Assets/Images/Chicken-and-Dumplings_home.jpg"
-          alt="Chicken and Dumplings"
-        />
-        <a href="/Pages/chickenAndDumplings.html">
-          <h2>Chicken and Dumplings</h2>
-        </a>
-        <img
-          src="/Assets/Images/Chicken-Ramen-Noodle-home.jpg"
-          alt="Chicken Ramen Noodle"
-        />
-        <a href="/Pages/chickenRamenNoodle.html">
-          <h2>Chicken Ramen Noodle</h2>
-        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
-    </section>
-    <footer>
-      <hr />
-      <div>
-        <p
-          style="
-            text-align: center;
-            background-color: black;
-            color: white;
-            height: 50px;
-            padding-top: 30px;
-          "
-        >
-          &copy; 2024 FlavorFus. All Rights Reserved.
-        </p>
+      <button id="signin"><a href="#">Sign In</a></button>
+    </header>
+
+    <main>
+      <div class="hero">
+        <span id="tagline">Where Recipes Ignite Creativity</span>
+        <button id="signup"><a href="#">Signup</a></button>
       </div>
+  
+      <span id="tagline2"
+        >Find Anything ,<br />
+        all in one place .
+      </span>
+  
+      <section>
+        <div class="topic">
+          <hr class="line" />
+          <span>Top In This Week</span>
+          <hr class="line" />
+        </div>
+        <div class="container">
+          <div class="card">
+            <img src="/Assets/Images/Cheeseburger-home.jpg" alt="Cheeseburger" />
+            <h2>Cheeseburger</h2>
+            <a href="/Pages/cheeseburger.html" target="_blank" class="btn"> View Recipe </a>
+          </div>
+  
+          <div class="card">
+            <img
+              src="/Assets/Images/Chicken-Ramen-Noodle-home.jpg"
+              alt="Chicken Ramen Noodle"
+            />
+            <h2>Chicken Ramen Noodle</h2>
+            <a href="/Pages/chicken-ramen-noodle.html" target="_blank" class="btn">
+              View Recipe
+            </a>
+          </div>
+  
+          <div class="card">
+            <img
+              src="/Assets/Images/Honey-Fried-Chicken-and-Waffles_home.jpg"
+              alt="Toffee Rolls"
+            />
+            <h2>Honey Fried Chicken And Waffles</h2>
+            <a href="/Pages/honey-fried-chicken-and-waffles.html" target="_blank" class="btn">
+              View Recipe
+            </a>
+          </div>
+        </div>
+      </section>
+  
+      <div class="middle-header">
+        <div class="search">
+          <p style="color: #ffffff">FIND THE PERFECT RECIPES :</p>
+          <input type="search" placeholder=" Search recipes" />
+        </div>
+        <div class="icons">
+          <a href="#"
+            ><i class="fa-solid fa-utensils fa-2xl" style="color: #ffffff"></i
+            >Dinner</a
+          >
+          <a href="#">
+            <i
+              class="fa-solid fa-gauge-simple-high fa-2xl"
+              style="color: #ffffff"
+            ></i>
+            Instant Pot
+          </a>
+          <a href=""
+            ><i class="fa-solid fa-bread-slice fa-2xl" style="color: #ffffff"></i
+            >Breads</a
+          >
+          <a href=""
+            ><i class="fa-solid fa-carrot fa-2xl" style="color: #ffffff"></i>Side
+            Dishes</a
+          >
+          <a href=""
+            ><i
+              class="fa-solid fa-magnifying-glass fa-2xl"
+              style="color: #ffffff"
+            ></i
+            >More+</a
+          >
+        </div>
+      </div>
+  
+      <section>
+        <div class="topic">
+          <hr class="line" />
+          <span>Latest Recipes</span>
+          <hr class="line" />
+        </div>
+  
+        <div class="container">
+          <div class="card">
+            <img
+              src="/Assets/Images/Chicken-and-Dumplings_home.jpg"
+              alt="Cheeseburger"
+            />
+            <h2>Chicken and Dumpling</h2>
+            <a href="/Pages/chicken-and-dumplings.html" target="_blank" class="btn">
+              View Recipe
+            </a>
+          </div>
+  
+          <div class="card">
+            <img src="/Assets/Images/Toffee_home.jpg" alt="Homemade Toffee" />
+            <h2>homemade Toffee</h2>
+            <a href="/Pages/easy-homemade-toffee.html" target="_blank" class="btn">
+              View Recipe
+            </a>
+          </div>
+  
+          <div class="card">
+            <img
+              src="/Assets/Images/Sourdough-Biscuits_home.jpg"
+              alt="Sourdough Biscuits"
+            />
+            <h2>Sourdough Biscuits</h2>
+            <a href="/Pages/sourdough-biscuits.html" target="_blank" class="btn"> View Recipe </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="/Assets/Images/logo.png" alt="logo"  />
+      <div class="social-links">
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank"
+                ><i class="fa-brands fa-youtube fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com" target="_blank"
+                ><i class="fa-brands fa-tiktok fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook-f fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.spotify.com" target="_blank"
+                ><i class="fa-brands fa-spotify fa-lg"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="powered-by">
+        <p>powered by</p>
+        <i class="fa-brands fa-cloudversify fa-sm" style="color: #525252"></i>
+        <p>cloudC</p>
+      </div>
+      <p>&copy; 2024 FlavorFus. All Rights Reserved.</p>
     </footer>
   </body>
 </html>

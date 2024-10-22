@@ -1,0 +1,145 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header {
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60px ;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+}
+
+#logo {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+header>nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+header>nav>ul>li {
+    padding: 0px 50px;
+}
+
+header>nav>ul>li>a {
+    font-family: monospace;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.search {
+    margin-left: 50px;
+    & P{
+        text-align: center;
+        margin: 20px auto;
+    }
+}
+
+.search>input {
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0px 20px;
+}
+
+.search>input:focus {
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#signin {
+    width: 100px;
+    height: auto;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#signin:hover {
+    background-color: black;
+    & a{
+        color: white;
+    }
+}
+
+#signin>a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0px;
+    & p{
+        margin: 0px;
+        font-size: 0.9rem;
+        color: #525252;
+    }
+}
+
+footer img{
+    margin-top: 20px;
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+}
+
+.social-links > nav > ul{
+    display: flex;
+    list-style: none;
+}
+
+.social-links > nav > ul > li{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-links > nav > ul > li > a{
+    text-decoration: none;
+    color: #551a8b;
+}
+
+.social-links nav .fa-brands{
+    background-color: #fbfff8;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.powered-by{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
