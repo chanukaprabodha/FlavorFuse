@@ -31,7 +31,7 @@
     font-weight: 600;
     color: black;
     text-align: center;
-    padding: 150px 0px 150px 0px;
+    padding: 150px 0px;
     line-height: 5rem;
 }
 
@@ -83,41 +83,44 @@
 }
 
 .container {
+    width: 80%;
     margin: 40px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
 }
 
 .card {
+    padding: 20px;
+    width: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: auto;
     height: 540px;
-    border-radius: 20px;
     position: relative;
     overflow: hidden;
 }
 
 .card img {
     position: relative;
-    width: calc(100vw / 4);
+    width: 100%;
+    border-radius: 40px;
     height: auto;
-    object-fit: cover;
-    border-radius: 18px;
+    object-fit: contain;
     z-index: 1;
 }
 
 .card h2 {
-    width: 100%;
+    width: 50%;
     height: auto;
     margin: 0px;
     padding-top: 50px;
     display: flex;
-    color: #fbfff8;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.5px;
     position: absolute;
     top: 0px;
     font-size: 2rem;
@@ -138,7 +141,6 @@
     height: 50px;
     position: absolute;
     bottom: 20px;
-    right: 10px;
     background-color: rgba(255, 255, 255, 0.5);
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
@@ -161,7 +163,7 @@
     margin-bottom: 35px;
 }
 
-.fa-solid{
+.fa-solid {
     height: 30px;
     font-size: 3rem;
     display: flex;
@@ -170,13 +172,13 @@
     justify-content: space-between;
 }
 
-.icons a:hover{
+.icons a:hover {
     color: white;
     transform: scale(1.2);
     transition: transform 1s ease-out;
 }
 
-.icons{
+.icons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -184,8 +186,93 @@
     width: 100%;
 }
 
-.icons a{
+.icons a {
     text-decoration: none;
     color: white;
     height: auto;
+    display: block;
+}
+
+/* Mobile 320px 375px 425px*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .hero {
+        max-width: 100%;
+        margin-top: 60px;
+        background-size: cover;
+    }
+
+    #tagline {
+        width: 73%;
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+
+    }
+
+    #signup {
+        width: 40%;
+        height: 50px;
+        border-radius: 100px;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    #signup>a {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    #tagline2 {
+        font-size: 3rem;
+        line-height: 4rem;
+        padding: 100px 0px;
+    }
+
+    .container {
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .card{
+        height: auto;
+    }
+
+    .card h2 {
+        font-weight: 900;
+        font-size: 1.8rem;
+        -webkit-text-stroke-width: 0.3px;
+    }
+
+    .btn {
+        bottom: 40px;
+    }
+
+    .middle-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100px;
+        & p {
+            font-size: 0.8rem;
+            margin: 0px;
+        }
+    }
+
+    .middle-header .search {
+        flex-direction: row;
+        justify-content: left;
+        align-items: flex-start;
+        margin: 0px;
+        width: 50%;
+    }
+
+    .middle-header .search input {
+        width: 100%;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .middle-header .icons{
+        display: none;
+    }
 }

@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easy Homemade Toffee</title>
+    <link rel="icon" href="/Assets/Images/tittle-logo.jpg">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Itim&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/recipe.css" />
     <link rel="stylesheet" href="/css/body-header-footer.css" />
@@ -26,9 +31,21 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
       </nav>
       <button id="signin"><a href="#">Sign In</a></button>
     </header>
+    <div class="menu-panel" id="menu-panel-id">
+      <button class="close-btn" id="btn-close">&times;</button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button id="signin"><a href="#">Sign In</a></button>
+    </div>
 
     <main>
       <section>
@@ -102,34 +119,34 @@
                 Preheat oven to 350 degrees F. Line a baking sheet with
                 parchment paper or a silicone baking mat.
               </li>
-              <br>
+              <br />
               <li>
                 Spread almonds in an even layer onto the prepared baking sheet.
                 Place into oven and bake until toasted, about 10 minutes; set
                 aside.
               </li>
-              <br>
+              <br />
               <li>
                 In a medium saucepan, combine butter, sugar vanilla and salt
                 over medium heat. Cook, whisking constantly, until butter has
                 melted and mixture is almond brown in color, about 10-15
                 minutes.
               </li>
-              <br>
+              <br />
               <li>
                 Immediately spread the hot caramel mixture evenly over the
                 almonds. Sprinkle with chocolate chips. After 1-2 minutes,
                 spread the chocolate chips in an even layer until smooth.
                 Sprinkle with pecans.
               </li>
-              <br>
+              <br />
               <li>Let cool completely, about 2 hours. Break into pieces.</li>
             </ol>
           </div>
         </section>
       </section>
     </main>
-    
+
     <footer>
       <img src="/Assets/Images/logo.png" alt="logo" />
       <div class="social-links">
@@ -175,5 +192,19 @@
       </div>
       <p>&copy; 2024 FlavorFus. All Rights Reserved.</p>
     </footer>
+
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+
+      burger.addEventListener("click", () => {
+        menuPanel.classList.toggle("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
   </body>
 </html>
